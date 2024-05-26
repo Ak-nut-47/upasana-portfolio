@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
+import pdf from "../../Assets/../Assets/Upasana-Bordoloi-Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -17,18 +17,16 @@ function ResumeNew() {
 
   return (
     <div>
-      <Container fluid className="resume-section">
-        <Particle />
+      <Container fluid className="resume-section" style={{ minHeight: "100vh" }}>
+        {/* <Particle /> */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+          {/* Button to open resume in new tab and download */}
+          <a href={pdf} download="Upasana-Bordoloi-Resume.pdf" target="_blank">
+            <Button variant="primary" style={{ maxWidth: "250px" }}>
+              <AiOutlineDownload />
+              &nbsp;Download CV
+            </Button>
+          </a>
         </Row>
 
         <Row className="resume">
@@ -38,15 +36,13 @@ function ResumeNew() {
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+          {/* Button to open resume in new tab and download */}
+          <a href={pdf} download="Upasana-Bordoloi-Resume.pdf" target="_blank">
+            <Button variant="primary" style={{ maxWidth: "250px" }}>
+              <AiOutlineDownload />
+              &nbsp;Download CV
+            </Button>
+          </a>
         </Row>
       </Container>
     </div>

@@ -1,23 +1,40 @@
 html {
-  --section-background-color: linear-gradient(
+  /* --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
+  ); */
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(248, 237, 235, 0.678),
+    rgba(248, 237, 235, 0.863)
   );
 
-  --image-gradient: linear-gradient(
+  /* --image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
     rgba(12, 10, 22, 0.863)
-  );
-
-  --imp-text-color: #c770f0;
+  ); */
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(248, 237, 235, 0.678),
+    rgba(248, 237, 235, 0.863)
+);
+  /* --imp-text-color: #c770f0; */
+  --imp-text-color: #2F4F4F;
 }
 
 .purple {
   color: var(--imp-text-color) !important;
 }
 
+.textcolorpurple{
+  color: #c770f0;
+}
+.universaltextcolor {
+  /* color: teal; */
+  color: black;
+}
 button:focus {
   box-shadow: none !important;
 }
@@ -33,7 +50,7 @@ button:focus {
   height: 100%;
   z-index: 999999;
   background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  /* background-image: url(./Assets/pre.svg); */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -84,6 +101,7 @@ button:focus {
 
 .navbar {
   position: fixed !important;
+  background-color: #1b1a2ea9 !important;/*New Added , On Loading Bg Color Can be changed Based on Scroll xxx*/
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
@@ -97,7 +115,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color:white !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -144,7 +162,8 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    /* background-color: #181a27 !important; */
+    background-color: #1b1a2ea9 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -257,7 +276,9 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* min-height: 100vh; */
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+  background-color: rgba(248, 237, 235, 0.863);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -281,17 +302,18 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  /* color: #cd5ff8; */
+  color: black;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: black !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: black !important;
 }
 
 @media (max-width: 767px) {
@@ -318,13 +340,15 @@ button:focus {
 }
 
 .home-about-section {
+  background-color: rgba(248, 237, 235, 0.863);
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
 
 .home-about-description {
-  color: white !important;
+  /* color: white !important; */
+  color: #c770f0 !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -339,10 +363,11 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: black !important;
 }
 
 .home-about-social-links {
+  color:black;
   justify-content: center !important;
   padding-top: 15px !important;
   display: inline-block !important;
@@ -394,6 +419,7 @@ button:focus {
   padding-left: 15px;
 }
 
+
 .icon-colour {
   color: #700c86 !important;
 }
@@ -402,7 +428,8 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  /* background-color: rgb(10, 4, 22); */
+  background-color: #1b1a2ea9 !important;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -544,10 +571,17 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 50px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color:black;
+}
+.contact-section {
+  position: relative !important;
+  padding-top: 100px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color:black;
 }
 
 .tech-icons {
@@ -720,7 +754,7 @@ button:focus {
   }
 }
 
-.fork-btn {
+/* .fork-btn {
   font-size: 1.1em !important;
   padding-top: 10px !important;
 }
@@ -740,4 +774,30 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+} */
+.youtube-responsive {
+  display: block;
+  margin-top: 20px; /* Adjust margin as needed */
 }
+
+.youtube-desktop {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .youtube-responsive {
+    display: none;
+  }
+
+  .youtube-desktop {
+    display: block;
+    margin-top: 20px; 
+  }
+}
+
+
+
+
+
+
+
