@@ -1,4 +1,4 @@
-# ChatGPT React Art Portfolio
+# React Art Portfolio
 
 This project is a React-based art portfolio showcasing recent works of an artist. It includes features such as displaying artworks dynamically, providing information about each artwork, and integrating social media links.
 
